@@ -1,0 +1,60 @@
+.index-body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: antiquewhite;
+}
+
+.index-nav {
+    background: grey;
+    display: flex;
+    width: 100%;
+    text-align: left;
+    box-shadow: 5px 5px 5px black;
+    margin-top: 0;
+    border-radius: 3px;
+}
+
+.index-nav h1 {
+    padding-left: 1em;
+    padding-top: .5em;
+}
+
+.index-logo {
+    width: 75px;
+    height: auto;
+}
+
+.index-container {
+    background-color: silver;
+    margin: 1em;
+    height: 28em;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.index-title {
+    padding-top: 1em;
+    text-align: center;
+}
+
+.index-link-list {
+    text-align: center;
+    display: inline-flex;
+    width: 95%;
+}
+
+.index-link-img {
+    width: 200px;
+    height: auto;
+    border: 2px solid black;
+}
+
+.index-link-container {
+    flex: 1;
+    padding-right: 2em;
+}
+
+.index-link-container p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
