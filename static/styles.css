@@ -10,9 +10,13 @@
 .ind-logo {
     width: 75px;
     height: 100%;
+    border-bottom: 1px solid white;
 }
 
-.ind-nav, .ind-header, .ind-main, .ind-item-container {
+.ind-nav, .ind-header, 
+.ind-main, .ind-item-container, 
+.las-recipe-img, .las-item-container,
+.nav-button {
     border-radius: 10px;
 }
 
@@ -26,6 +30,9 @@
     text-align: left;
     margin-top: 0;
     color: #f8f9fa;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
 }
 
 .ind-nav h1 {
@@ -38,6 +45,7 @@
 }
 
 .ind-header {
+    margin-top: 5em;
     color: black;
     width: 100vw;
     min-height: 200px;
@@ -65,7 +73,8 @@
     margin-top: 2em;
 }
 
-.flex-container, .ind-item-container {
+.flex-container, .ind-item-container,
+.las-img-center {
     text-align: center;
 }
 
@@ -88,11 +97,75 @@
     padding: 0 1em 0 1em;
 }
 
-.recipe-img {
+.ind-recipe-img {
     width: 100%;
     height: auto;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
+}
+
+/* recipe template start */
+
+.las-button-container {
+    width: 100%;
+    text-align: right;
+    padding: 1.2em 2em 0 0;
+}
+
+.nav-button, .nav-button:hover,
+.nav-button::after {
+    font-weight: 100;
+}
+
+.nav-button {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border: .1px solid white;
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    padding: 0;
+}
+
+.nav-button:hover {
+    color: black;
+    background-color: #d9dde0;
+}
+
+.nav-button::after {
+    background-color: black;
+    color: white;
+}
+
+.las-recipe-img {
+    width: 300px;
+    height: auto;
+}
+
+.las-item-container {
+    flex: 1;
+    display: block;
+    margin: 2em 2em;
+    font-weight: 300;
+    padding: 1em;
+    background-color: white;
+}
+
+.las-item-container ul {
+    list-style: circle;
+}
+
+.las-item-container h4 {
+    text-align: center;
+}
+
+.las-item-container ol li {
+    padding: 1em 0;
+}
+
+.las-item-container ul li {
+    padding: .5em 0;
 }
 
 
