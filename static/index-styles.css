@@ -1,54 +1,82 @@
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.6em;
 }
 
-nav {
-    background: grey;
-    display: flex;
-    width: 100%;
-    text-align: left;
-    box-shadow: 5px 5px 5px black;
-    margin-top: 0;
+body {
+    background-color: #f8f9fa;
+}
+
+nav, header, main, .item-container {
     border-radius: 3px;
 }
 
+nav, .flex-container {
+    display: flex;
+}
+
+nav {
+    background: #343a40;
+    width: 100vw;
+    text-align: left;
+    margin-top: 0;
+    color: #f8f9fa;
+}
+
 nav h1 {
-    padding-left: 1em;
-    padding-top: .5em;
+    padding: .5em 0 0 1em;
+    font-weight: 300;
+}
+
+header, .item-container {
+    background-color: white;
+}
+
+header {
+    color: black;
+    width: 100vw;
+    min-height: 200px;
+}
+
+.header-p, .item-container p {
+    color: grey;
+}
+
+.header-p {
+    margin: 0 200px;
+    text-align: center;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 1.5em;
+    font-weight: 100;
 }
 
 .index-logo {
     width: 75px;
-    height: auto;
+    height: 100%;
 }
 
 main {
     min-height: max-content;
     max-height: max-content;
-    box-shadow: 5px 5px black;
-    background-color: gray;
-    border-radius: 5px;
-    margin-top: 50px;
+    margin-top: 2em;
 }
 
-main h2 {
+.flex-container, .item-container {
     text-align: center;
-    padding: 1.5em 0 .5em 0;
 }
 
-.main-container {
+.flex-container {
     display: flex;
-    text-align: center;
 }
 
 .item-container {
     flex: 1;
     display: block;
-    text-align: center;
-    background-color: white;
-    border: 2px solid black;
-    margin: 0 0 2em 2em;
-    border-radius: 5px;
+    margin: .5em 0 2em 2em;
 }
 
 .item-container:nth-child(3) {
@@ -56,13 +84,15 @@ main h2 {
 }
 
 .item-container p {
-    font-size: 19px;
+    font-weight: 400;
+    padding: 0 1em 0 1em;
 }
 
 .recipe-img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
 }
 
 
